@@ -50,26 +50,34 @@
             <div class="container mt-5">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <h1 class="text-center mb-4">Mis cuotas</h1>
-
-
-                        <div id="alertaError" class="alert alert-danger d-none" role="alert"></div>
-
+                        <h1 class="text-center mb-4">Mi Cuota</h1>
                         <form id="compoundInterestForm" onsubmit="calcularInteresCompuesto(event)">
                             <div class="mb-3">
-                                <label for="cuota" class="form-label">Monto Inicial:</label>
-                                <input type="number" class="form-control" id="cuota" placeholder="$" required>
+                                <label for="monto" class="form-label">Monto Inicial:</label>
+                                <input type="number" class="form-control" id="monto" placeholder="$" required>
                             </div>
-
                             <div class="mb-3">
                                 <label for="fechaVencimiento" class="form-label">Fecha de Vencimiento:</label>
                                 <input type="date" class="form-control" id="fechaVencimiento" required>
                             </div>
-
                             <button type="submit" class="btn btn-primary w-100">Calcular</button>
                         </form>
-
-                        <p id="resultado" class="mt-4 text-center"></p>
+        
+                        <div id="alertaError" class="alert alert-danger mt-4 d-none"></div>
+        
+                        <div id="resultados" class="mt-4 d-none">
+                            <h4 class="text-center">A la fecha llevas:</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item">Días de Mora: <span id="diasMora"></span></li>
+                                <li class="list-group-item">Interés Acumulado: $<span id="interesAcumulado"></span></li>
+                                <li class="list-group-item">Monto Total: $<span id="montoTotal"></span></li>
+                            </ul>
+        
+                            <div class="d-grid gap-2 mt-4">
+                                <button class="btn btn-success" type="button" onclick="abonar()">Abonar</button>
+                                <button class="btn btn-warning" type="button" onclick="comunicarse()">Comunicarse</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

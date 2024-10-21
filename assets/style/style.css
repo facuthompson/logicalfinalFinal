@@ -50,13 +50,8 @@ body {
     background-color: #fee101;
 }
 
-#hero {
-    padding-top: 5px;
-    display: flex;
-    flex-direction: column;
-}
 
-#hero h1 {
+#h1hero  {
     font-size: 70px;
     background-color: #ED213A;
     text-align: center;
@@ -65,7 +60,7 @@ body {
     max-width: 760px;
 }
 
-#hero h2 {
+#h2hero{
     color: #ED213A;
     font-size: 50px;
     text-align: center;

@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+section {
+    height: 100vh;
+    min-width: fit-content;
+    z-index: 2;
+}
+
+
+header {
+    min-height: 80px;
+    top: 0;
+    background-color: #ED213A;
+    position: fixed;
+    position: sticky;
+    font-size: 1.3rem;
+    z-index: 3;
+    border-bottom: white solid 1px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+footer h3 {
+    border-top: white solid 2px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: medium;
+}
+
+
+
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+
+body {
+    background-color: #fee101;
+}
+
+#hero {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero h1 {
+    font-size: 70px;
+    background-color: #ED213A;
+    text-align: center;
+    color: #fee101;
+    margin: auto;
+    max-width: 760px;
+}
+
+#hero h2 {
+    color: #ED213A;
+    font-size: 50px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+}
+
+
+
+#contactoForm {
+    justify-content: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+#contact .row {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-signin {
+    background-color: #fee101;
+    max-width: 400px;
+}
+
+
+
+#login {
+    background-color: #fee101;
+}
+
+#creditos {
+    background-color: #fee101;
+    padding-top: 50px;
+}
+
+
+
+
+#creditos form {
+    justify-content: center;
+    max-width: 600px;
+    min-width: 390px;
+    background: #e63235;
+    border: white 3px solid;
+    border-radius: 5%;
+    font-weight: 500;
+    color: #fee101;
+    font-size: 1.1rem;
+}
+
+#registro form {
+    justify-content: center;
+    max-width: 750px;
+    margin: auto;
+    border: #e63235 2px solid;
+    padding: 15px;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+
+
+
+.nav-link {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+.nav-item :hover {
+    color: #fee101;
+}
+
+
+#cuotas {
+    justify-content: center;
+    margin: auto;
+    max-width: 750px;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #ED213A;
+    margin: auto;
+    max-width: 760px;
+}
+
+footer {
+    background-color: #e63235;
+}
